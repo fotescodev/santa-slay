@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Santa Slay 3D Balance Config",
+  "type": "object",
+  "required": [
+    "startingGifts",
+    "runLengthSeconds",
+    "speed",
+    "spawns",
+    "rewards",
+    "collisions"
+  ],
+  "properties": {
+    "startingGifts": { "type": "integer", "minimum": 1, "maximum": 999 },
+    "runLengthSeconds": { "type": "integer", "minimum": 20, "maximum": 300 },
+    "seed": { "type": "integer" },
+    "speed": {
+      "type": "object",
+      "required": ["start", "max", "rampSeconds"],
+      "properties": {
+        "start": { "type": "number", "minimum": 1 },
+        "max": { "type": "number", "minimum": 1 },
+        "rampSeconds": { "type": "number", "minimum": 1 }
+      }
+    },
+    "spawns": {
+      "type": "object",
+      "required": ["basePerSecond", "maxPerSecond", "rampSeconds", "types"],
+      "properties": {
+        "basePerSecond": { "type": "number", "minimum": 0 },
+        "maxPerSecond": { "type": "number", "minimum": 0 },
+        "rampSeconds": { "type": "number", "minimum": 1 },
+        "types": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "weight"],
+            "properties": {
+              "id": { "type": "string" },
+              "weight": { "type": "number", "minimum": 0 }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "type": "object",
+      "required": ["cleanPassGift", "comboEvery", "comboGiftMin", "comboGiftMax"],
+      "properties": {
+        "cleanPassGift": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "nearMissEnabled": { "type": "boolean" },
+        "nearMissGift": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "comboEvery": { "type": "integer", "minimum": 2, "maximum": 20 },
+        "comboGiftMin": { "type": "integer", "minimum": 0, "maximum": 50 },
+        "comboGiftMax": { "type": "integer", "minimum": 0, "maximum": 50 },
+        "goldenGiftChance": { "type": "number", "minimum": 0, "maximum": 1 },
+        "giftPickupSmall": { "type": "array", "items": { "type": "integer" }, "minItems": 1 }
+      }
+    },
+    "collisions": {
+      "type": "object",
+      "required": ["giftLossPerHit", "minGiftsAfterHit"],
+      "properties": {
+        "giftLossPerHit": { "type": "integer", "minimum": 1, "maximum": 50 },
+        "minGiftsAfterHit": { "type": "integer", "minimum": 0, "maximum": 999 }
+      }
+    }
+  }
+}

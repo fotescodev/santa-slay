@@ -1,0 +1,34 @@
+{
+  "startingGifts": 20,
+  "runLengthSeconds": 90,
+  "seed": 1337,
+  "speed": {
+    "start": 10,
+    "max": 22,
+    "rampSeconds": 70
+  },
+  "spawns": {
+    "basePerSecond": 0.6,
+    "maxPerSecond": 1.4,
+    "rampSeconds": 70,
+    "types": [
+      { "id": "tree", "weight": 0.45 },
+      { "id": "rock", "weight": 0.35 },
+      { "id": "fence", "weight": 0.20 }
+    ]
+  },
+  "rewards": {
+    "cleanPassGift": 1,
+    "nearMissEnabled": false,
+    "nearMissGift": 2,
+    "comboEvery": 5,
+    "comboGiftMin": 3,
+    "comboGiftMax": 8,
+    "goldenGiftChance": 0.04,
+    "giftPickupSmall": [1, 3]
+  },
+  "collisions": {
+    "giftLossPerHit": 3,
+    "minGiftsAfterHit": 0
+  }
+}

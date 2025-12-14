@@ -22,3 +22,9 @@ Record decisions as:
 - **Why:** Simple for kids; clear risk/reward; supports replayability.
 - **Alternatives:** Separate score + health.
 - **Consequences:** Collision tuning becomes critical for fairness.
+
+## 2026‑02‑09
+### Release focus: web first, iOS in following version
+- **Why:** Aligns with current milestone goals and keeps scope lean while we harden the web experience.
+- **Alternatives:** Parallel web+iOS build, or iOS-first wrapper.
+- **Consequences:** Documentation and milestone tracking must reflect web-first priorities; iOS work resumes in Milestone 3.

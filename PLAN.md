@@ -1,5 +1,7 @@
 # PLAN — Santa Slay 3D (Web V1 → iOS)
 
+> Current focus: ship the web build first; iOS wrapper lands in Milestone 3.
+
 ## Milestone 0 — Repo + playable skeleton
 - [x] Add SPEC/AGENTS/PLAN/MEMORY/DECISIONS scaffolding
 - [x] Create web project skeleton (Vite + TypeScript)

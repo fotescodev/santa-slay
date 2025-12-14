@@ -1,7 +1,7 @@
 # MEMORY (keep short)
 
 ## Current milestone
-Milestone 0: Repo + agent scaffolding + basic Babylon scene + input abstraction.
+Milestone 0 (Web-first): Repo + agent scaffolding + basic Babylon scene + input abstraction. iOS packaging follows in the next version.
 
 ## Key constraints
 - Ages 7+; kid‑safe; no tracking/ads/chat/UGC/link‑outs in V1.

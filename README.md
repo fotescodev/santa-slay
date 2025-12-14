@@ -1,6 +1,6 @@
 # Santa Slay 3D (AI‑First)
 
-A web‑first, high‑fidelity 3D downhill runner for ages 7+, designed to be easily packaged for iOS.
+A web‑first, high‑fidelity 3D downhill runner for ages 7+, with iOS wrapping planned for the following version.
 
 ## Quick start (Web)
 

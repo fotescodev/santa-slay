@@ -10,13 +10,19 @@
       canvas { width: 100%; height: 100%; touch-action: none; display: block; }
       .hud { position: absolute; top: 12px; left: 0; right: 0; display:flex; justify-content:center; pointer-events:none; }
       .giftCounter { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-weight: 800; font-size: 28px; color: white; background: rgba(0,0,0,0.35); padding: 8px 14px; border-radius: 12px; }
-      .hint { position:absolute; bottom:16px; left:0; right:0; text-align:center; color: rgba(255,255,255,0.85); font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: 14px; }
+      .hint { position:absolute; bottom:20px; left:0; right:0; text-align:center; color: rgba(255,255,255,0.85); font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: 14px; }
+      .status { position:absolute; top:62px; left:0; right:0; text-align:center; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:white; font-weight:700; text-shadow: 0 2px 8px rgba(0,0,0,0.45); pointer-events:none; }
+      .restart { position:absolute; bottom:60px; left:0; right:0; display:flex; justify-content:center; pointer-events:none; }
+      .restart button { pointer-events:all; padding: 12px 20px; border-radius: 12px; background: #e21f2f; border:none; color:white; font-weight:800; font-size:16px; box-shadow:0 8px 16px rgba(0,0,0,0.3); opacity:0; transform: translateY(12px); transition: all 0.18s ease; }
+      .restart button.show { opacity:1; transform: translateY(0); }
     </style>
   </head>
   <body>
     <div id="app">
       <div class="hud"><div class="giftCounter" id="giftCounter">🎁 20</div></div>
+      <div class="status" id="status"></div>
       <div class="hint" id="hint">Drag left/right to steer</div>
+      <div class="restart"><button id="restart">Restart</button></div>
       <canvas id="renderCanvas"></canvas>
     </div>
     <script type="module" src="/src/main.ts"></script>

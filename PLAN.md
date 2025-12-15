@@ -6,9 +6,9 @@
 - [x] Add SPEC/AGENTS/PLAN/MEMORY/DECISIONS scaffolding
 - [x] Create web project skeleton (Vite + TypeScript)
 - [x] Create Babylon.js scene bootstrap
-- [ ] Implement input abstraction (touch/drag + keyboard fallback)
-- [ ] Add placeholder sleigh that moves left/right
-- [ ] Add HUD gift counter
+- [x] Implement input abstraction (touch/drag + keyboard fallback)
+- [x] Add placeholder sleigh that moves left/right
+- [x] Add HUD gift counter
 
 ## Milestone 1 — V1 playable loop
 - [ ] Procedural track segments (simple repeated ground mesh initially)

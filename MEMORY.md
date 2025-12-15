@@ -17,6 +17,6 @@ Milestone 0 (Web-first): Repo + agent scaffolding + basic Babylon scene + input 
 - Mobile WebGL memory/perf; keep textures/lightweight assets.
 
 ## Next 3 tasks
-1) Make sleigh placeholder move with touch/drag.
-2) Add gift counter + collisions spill gifts.
-3) Add obstacle spawner with deterministic seed for reproducible runs.
+1) Add end-of-run screen with best score persistence + share placeholder.
+2) Tune obstacle shapes/colliders + add camera banking for turns.
+3) Build deterministic track generator for longer runs and varying density.
